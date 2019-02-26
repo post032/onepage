@@ -1,0 +1,38 @@
+doctype html
+html(lang="ru-Ru")
+  head 
+    meta(charset="UTF-8")
+    title sport
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="css/style.min.css")
+    link(rel="stylesheet", href="css/fullpage.css")
+    script(type="text/javascript" src="js/jquery-3.3.1.min.js")
+    script(type="text/javascript" src="js/fullpage.js")
+    script(type="text/javascript" src="js/scrolloverflow.min.js")
+    script(type="text/javascript" src="js/script.js")
+
+  body
+    div.container
+      include ../sections/header
+      include ../sections/scroll
+    main.container
+      //- include ../sections/social
+      section(id="fullpage")
+        section(id="section0").section
+          //- include ../sections/scroll
+          include ../sections/page-1
+          include ../sections/social
+        section(id="section1").section
+          //- include ../sections/scroll
+          include ../sections/page-2
+          include ../sections/social
+        section(id="section2").section
+          //- include ../sections/scroll
+          include ../sections/page-3
+          include ../sections/social
+        section(id="section3").section
+          //- include ../sections/scroll
+          include ../sections/page-4
+        section(id="section4").section.fp-auto-height
+          include ../sections/footer
+      //- include ../sections/footer

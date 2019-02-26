@@ -1,0 +1,262 @@
+.section3 {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.page-3__content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  // margin-left: 50px;
+  // margin-right: 10px;
+  margin-top: 40px;
+}
+
+.page-3__content-info {
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-between;
+  align-items: flex-start;
+  // width: 967px;
+}
+
+.page-3__switch,
+.page-3__images-min {
+  display: none;
+}
+
+.page-3__image-full {
+  width: 207px;
+  height: 311px;
+  position: absolute;
+  bottom: 0;
+  left: -45px;
+  z-index: -1;
+}
+
+.page-3__content-title {
+  font-size: 18px;
+  color: @text-color;
+  font-family: "gothem pro black";
+  margin-left: 10px;
+}
+
+.page-3__content-text {
+  font-size: 12px;
+  color: @text-color;
+  line-height: 14px;
+  margin-top: 0;
+  width: 200px;
+}
+
+.link-button--page-3 {
+  margin-right: 10px;
+}
+
+@media (min-width: @size-tablet) {
+  .page-3__switch,
+  .page-3__images-min {
+    display: block;
+  }
+
+  .page-3__content-images,
+  .ipage-3__mages-min {
+    width: 337px;
+  }
+
+  .page-3__content-images {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .page-3__image-full {
+    margin-left: 28px;
+    margin-top: 3px;
+    margin-bottom: 30px;
+    width: 207px;
+    height: 311px;
+    position: relative;
+  }
+
+  .page-3__images-min {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 28px;
+    width: 295px;
+  }
+
+  .page-3__image-min {
+    width: 70px;
+    height: 70px;
+  }
+  .page-3 {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+  }
+  .page-3__content-info {
+    margin: 50px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 967px;
+    padding-bottom: 80px;
+    // margin: 30px 40px 50px 0;
+  }
+
+  .page-3__content-title {
+    margin-top: 1px;
+    margin-bottom: 27px;
+    font-size: 26px;
+    color: @text-color;
+    margin-left: 40px;
+  }
+
+  .page-3__content-text {
+    font-size: 14px;
+    line-height: 20px;
+    color: @text-color;
+    margin-bottom: 4px;
+    margin-top: 10px;
+    width: 400px;
+  }
+
+  .link-button--page-3 {
+    margin-right: 50px;
+  }
+
+  .page-3__content {
+    margin-right: 70px;
+  }
+
+  .page-3__switch {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20px;
+    left: -6px;
+  }
+
+  .right {
+    background-color: #55B7FF;
+  }
+
+  .right::after {
+    content: "";
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-top: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    transform: rotate(45deg);
+  }
+
+  .left::after {
+    content: "";
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-top: 1px solid #55B7FF;
+    border-left: 1px solid #55B7FF;
+    transform: rotate(-45deg);
+  }
+
+  .toggle__button {
+    width: 45px;
+    height: 45px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left {
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: @size-desktop) {
+
+  .page-3__content-info {
+    margin: 120px 0 0 0;
+  }
+
+
+.page-3__content-images,
+.ipage-3__mages-min {
+  width: 337px;
+}
+
+.page-3__content-images {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.page-3__image-full {
+  margin-left: 28px;
+  margin-top: 3px;
+  margin-bottom: 30px;
+  width: 296px;
+  height: 445px;
+  position: relative;
+}
+
+.page-3__images-min {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 28px;
+  width: 295px;
+}
+
+.page-3__image-min {
+  width: 90px;
+  height: 90px;
+}
+
+.page-3__content {
+  width: 402px;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-3__content-title {
+  margin-top: 1px;
+  margin-bottom: 27px;
+  .title2;
+}
+
+.page-3__content-text {
+  font-size: 16px;
+  line-height: 20px;
+  color: @text-color;
+  margin-bottom: 4px;
+  margin-top: 10px;
+  width: 400px;
+}
+
+.toggle__button {
+  width: 65px;
+  height: 65px;
+}
+
+.link-button--page-3 {
+  margin-top: 76px;
+}
+
+.page-3__switch {
+  position: absolute;
+  top: -1px;
+  left: -6px;
+}
+
+}
