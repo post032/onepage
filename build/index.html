@@ -13,7 +13,7 @@
   </head>
   <body>
     <div class="container">
-      <header class="header container">
+      <header class="header">
         <nav class="header__nav">
           <ul class="top__list">
             <li class="topmenu"><a class="top__link" href="#">Лыжный спорт
@@ -56,7 +56,7 @@
                 <p class="page-1__contact__item phone">+1 (234) 567-89-00</p>
                 <p class="page-1__contact__item email">ghast@email.ru</p>
               </section>
-              <section class="page-1__content"><img class="page-1__content__img" src="img/woman1.png">
+              <section class="page-1__content"><img class="page-1__content__img" src="img/woman1.png" width="100%">
                 <section class="page-1__content__info">
                   <h1 class="page-1__content__title">Ghast.ru</h1>
                   <p class="page-1__content__text">Уникальная российская форма для занятий фитнесом. Программа питания и тренировок в подарок.</p>
@@ -90,7 +90,8 @@
                 <h2 class="block-2__content-title">Ghast.ru</h2>
                 <p class="block-2__content-text block-2__content-text--margin">Высокотехнологичная спортивная одежда для любых видов спорта от российского производителя.  </p>
                 <p class="block-2__content-text">Бренд зарекомендовал себя на рынке как высококачественный и надежный продукт, полностью соответствующий<br> Вашим потребностям.</p><a class="link-button link-button--block2" href="#">Просмотреть каталог</a>
-              </section><img class="block-2__content-img" src="img/women-2.jpg" width="100%">
+              </section>
+              <div class="block-2__content-img--overflow"><img class="block-2__content-img" src="img/women-2.jpg" width="100%"></div>
             </section>
           </section>
           <section class="social">
@@ -113,7 +114,7 @@
           </section>
         </section>
         <section class="section" id="section2">
-          <main class="section3">
+          <section class="section3">
             <section class="page-3">
               <section class="page-3__content-info">
                 <section class="page-3__content-images">
@@ -121,7 +122,11 @@
                     <button class="right toggle__button"><span class="visually-hidden">Вправо</span></button>
                     <button class="left toggle__button"><span class="visually-hidden">Влево</span></button>
                   </div><img class="page-3__image-full" src="img/1_photo.png" width="100%">
-                  <section class="page-3__images-min"><img class="page-3__image-min" src="img/4_photo.png" width="100%"><img class="page-3__image-min" src="img/3_photo.png" width="100%"><img class="page-3__image-min" src="img/2_photo.png" width="100%"></section>
+                  <section class="page-3__images-min">
+                    <div class="page-3__image-min"><img class="page-3__image-min--size" src="img/VZZ_0067.png" width="100%"></div>
+                    <div class="page-3__image-min"><img class="page-3__image-min--size" src="img/VZZ_0247.png" width="100%"></div>
+                    <div class="page-3__image-min"><img class="page-3__image-min--size" src="img/VZZ_0398.png" width="100%"></div>
+                  </section>
                 </section>
                 <section class="page-3__content">
                   <h2 class="page-3__content-title">Рашгард с длинным рукавом укороченный</h2>
@@ -132,7 +137,7 @@
                 </section>
               </section>
             </section>
-          </main>
+          </section>
           <section class="social">
             <ul class="social__lists">
               <li class="social__item"><a class="social__link" href="#"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
