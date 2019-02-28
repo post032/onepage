@@ -1450,3 +1450,174 @@ nav ul li:hover > ul {
     left: 4px;
   }
 }
+.popup {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 320px;
+}
+.background {
+  background: url("../img/modal-background.jpg") no-repeat top left;
+  background-size: contain;
+}
+.modal {
+  background: url(../img/modal-woman.png) no-repeat right 29px;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.modal__title {
+  font-size: 18px;
+  color: #1D85FF;
+  text-align: center;
+  font-family: "gothem pro black";
+}
+.modal__input {
+  border: 1px solid #646464;
+  background: none;
+  text-align: center;
+}
+.modal__button {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.modal__write,
+.modal__call {
+  background-color: #1DA0FF;
+  border: none;
+  padding: 10px 40px;
+  color: #ffffff;
+}
+.modal__icon1 {
+  position: absolute;
+  width: 10px;
+  top: 7px;
+  left: 26px;
+}
+.modal__icon2 {
+  position: absolute;
+  width: 10px;
+  top: 7px;
+  left: 186px;
+}
+.modal__entry {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.modal__input::-webkit-input-placeholder {
+  font-size: 18px;
+  color: #646464;
+}
+.modal__input::-ms-input-placeholder {
+  font-size: 18px;
+  color: #646464;
+}
+.modal__input::placeholder {
+  font-size: 18px;
+  color: #646464;
+}
+.modal__input {
+  width: 245px;
+  height: 34px;
+  margin-top: 16px;
+  margin-bottom: 6px;
+}
+@media (min-width: 768px) {
+  .popup {
+    width: 520px;
+  }
+  .modal__write,
+  .modal__call {
+    padding: 10px 60px;
+  }
+}
+@media (min-width: 1366px) {
+  .popup {
+    position: relative;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 775px;
+    height: 447px;
+  }
+  .modal__title {
+    font-size: 36px;
+    line-height: 37px;
+    width: 558px;
+    margin-top: 60px;
+  }
+  .modal__write,
+  .modal__call {
+    width: 315px;
+    height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: "gothem pro bold";
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #1DA0FF;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.17);
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.17);
+  }
+  .modal__entry {
+    margin-bottom: 30px;
+  }
+  .modal__call {
+    padding-left: 55px;
+  }
+  .modal__write {
+    padding-left: 69px;
+  }
+  .modal__input {
+    width: 345px;
+    height: 44px;
+    margin-top: 16px;
+    margin-bottom: 6px;
+  }
+  .modal__icon1 {
+    position: absolute;
+    top: 18px;
+    left: 115px;
+    width: 21px;
+  }
+  .modal__icon2 {
+    position: absolute;
+    top: 18px;
+    left: 495px;
+    width: 21px;
+  }
+}

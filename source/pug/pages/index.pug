@@ -15,24 +15,19 @@ html(lang="ru-Ru")
     div.container
       include ../sections/header
       include ../sections/scroll
-    main.container
-      //- include ../sections/social
-      section(id="fullpage")
-        section(id="section0").section
-          //- include ../sections/scroll
-          include ../sections/page-1
-          include ../sections/social
-        section(id="section1").section
-          //- include ../sections/scroll
-          include ../sections/page-2
-          include ../sections/social
-        section(id="section2").section
-          //- include ../sections/scroll
-          include ../sections/page-3
-          include ../sections/social
-        section(id="section3").section
-          //- include ../sections/scroll
-          include ../sections/page-4
-        section(id="section4").section.fp-auto-height
-          include ../sections/footer
-      //- include ../sections/footer
+      main.container
+        section(id="fullpage")
+          section(id="section0").section
+            include ../sections/page-1
+            include ../sections/social
+          section(id="section1").section
+            include ../sections/page-2
+            include ../sections/social
+          section(id="section2").section
+            include ../sections/page-3
+            include ../sections/social
+          section(id="section3").section
+            include ../sections/page-4
+          section(id="section4").section.fp-auto-height
+            include ../sections/footer
+      include ../sections/modal
