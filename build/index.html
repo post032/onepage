@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <title>sport</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/fullpage.css">
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="js/fullpage.js"></script>
-    <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <div class="container">
@@ -45,7 +43,7 @@
           </ul>
         </nav>
       </header>
-      <div class="screen"><a class="toggle" href="#page-1"></a><a class="toggle" href="#page-2"></a><a class="toggle" href="#page-3"></a><a class="toggle" href="#page-4"></a></div>
+      <div class="screen" id="menu"><a class="toggle" href="#page-1" id="page1"></a><a class="toggle" href="#page-2" id="page2"></a><a class="toggle" href="#page-3" id="page3"></a><a class="toggle" href="#page-4" id="page4"> </a></div>
       <main class="container">
         <section id="fullpage">
           <section class="section" id="section0">
@@ -88,7 +86,7 @@
                 <section class="block-2__content">
                   <h2 class="block-2__content-title">Ghast.ru</h2>
                   <p class="block-2__content-text block-2__content-text--margin">Высокотехнологичная спортивная одежда для любых видов спорта от российского производителя.  </p>
-                  <p class="block-2__content-text">Бренд зарекомендовал себя на рынке как высококачественный и надежный продукт, полностью соответствующий<br> Вашим потребностям.</p><a class="link-button link-button--block2" href="#">Просмотреть каталог</a>
+                  <p class="block-2__content-text">Бренд зарекомендовал себя на рынке как высококачественный и надежный продукт, полностью соответствующий<br> Вашим потребностям.</p><a class="link-button link-button--block2" href="#" id="sub_toggle">Просмотреть каталог</a>
                 </section>
                 <div class="block-2__content-img--overflow"><img class="block-2__content-img" src="img/women-2.jpg" width="100%"></div>
               </section>
@@ -116,17 +114,12 @@
             <section class="section3">
               <section class="page-3">
                 <section class="page-3__content-info">
-                  <section class="page-3__content-images">
-                    <div class="page-3__switch">
-                      <button class="right toggle__button"><span class="visually-hidden">Вправо</span></button>
-                      <button class="left toggle__button"><span class="visually-hidden">Влево</span></button>
-                    </div><img class="page-3__image-full" src="img/1_photo.png" width="100%">
-                    <section class="page-3__images-min">
-                      <div class="page-3__image-min"><img class="page-3__image-min--size" src="img/VZZ_0067.png" width="100%"></div>
-                      <div class="page-3__image-min"><img class="page-3__image-min--size" src="img/VZZ_0247.png" width="100%"></div>
-                      <div class="page-3__image-min"><img class="page-3__image-min--size" src="img/VZZ_0398.png" width="100%"></div>
-                    </section>
-                  </section>
+                  <div class="sl">
+                    <div class="sl1"><img src="img/1_photo.png" width="100%"></div>
+                    <div class="sl2"><img src="img/VZZ_0067.png" width="100%"></div>
+                    <div class="sl3"><img src="img/VZZ_0247.png" width="100%"></div>
+                    <div class="sl4"><img src="img/VZZ_0398.png" width="100%"></div>
+                  </div>
                   <section class="page-3__content">
                     <h2 class="page-3__content-title">Рашгард с длинным рукавом укороченный</h2>
                     <p class="page-3__content-text">Изделие обеспечивает терморегуляцию мышц, снимая напряжение. </p>
@@ -301,20 +294,19 @@
             </footer>
           </section>
         </section>
-      </main>
-      <article class="popup">
-        <section class="background">
-          <form class="modal" action="" method="post">
-            <header>
-              <h2 class="modal__title">Чтобы заказать и получить подарок введите:</h2>
-            </header>
-            <section class="modal__entry">
-              <label class="visually-hidden" for="name">Ваше имя</label>
-              <input class="modal__input" type="text" placeholder="Ваше имя" id="name">
-              <label class="visually-hidden" for="phone">Номер телефона</label>
-              <input class="modal__input" type="text" placeholder="Номер телефона" id="phone">
-            </section>
-            <section class="modal__button"><svg class="modal__icon1" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <article class="popup" id="modal">
+          <section class="background">
+            <form class="modal" action="" method="post" id="modal">
+              <header>
+                <h2 class="modal__title">Чтобы заказать и получить подарок введите:</h2>
+              </header>
+              <section class="modal__entry">
+                <label class="visually-hidden" for="name">Ваше имя</label>
+                <input class="modal__input" type="text" placeholder="Ваше имя" id="name">
+                <label class="visually-hidden" for="phone">Номер телефона</label>
+                <input class="modal__input" type="text" placeholder="Номер телефона" id="phone">
+              </section>
+              <section class="modal__button"><svg class="modal__icon1" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0)">
 <path d="M20.449 16.2014L16.1985 13.3668C15.6591 13.01 14.9361 13.1274 14.5373 13.6366L13.2992 15.2285C13.14 15.4383 12.8508 15.4992 12.6206 15.3713L12.3851 15.2415C11.6044 14.8159 10.6329 14.2861 8.67567 12.3282C6.7184 10.3702 6.18754 9.39804 5.76198 8.61874L5.63284 8.38322C5.50321 8.15307 5.56292 7.8626 5.77281 7.70222L7.36365 6.46447C7.87266 6.06565 7.99023 5.34281 7.63382 4.80325L4.79924 0.552777C4.43397 0.00333081 3.70113 -0.16161 3.13565 0.178318L1.35825 1.246C0.799785 1.57432 0.390059 2.10605 0.214989 2.72977C-0.425046 5.06182 0.0564462 9.08657 5.98528 15.0161C10.7015 19.732 14.2126 21.0002 16.6258 21.0002C17.1812 21.0026 17.7344 20.9303 18.2706 20.7854C18.8944 20.6105 19.4262 20.2007 19.7544 19.6421L20.8231 17.8658C21.1635 17.3002 20.9987 16.5669 20.449 16.2014ZM20.2201 17.5067L19.1538 19.2841C18.9182 19.6873 18.5357 19.9838 18.0865 20.1114C15.9336 20.7024 12.1723 20.2129 6.48043 14.521C0.788508 8.82903 0.298977 5.06813 0.890047 2.91493C1.01783 2.46513 1.31466 2.08215 1.71836 1.84618L3.49575 0.779887C3.74111 0.632253 4.05918 0.703815 4.21768 0.942244L5.75747 3.25399L7.04984 5.19235C7.20461 5.42639 7.15376 5.74007 6.93297 5.91326L5.34175 7.15101C4.85751 7.52128 4.71923 8.19125 5.01737 8.72298L5.14372 8.95256C5.59097 9.77283 6.14702 10.7933 8.17707 12.823C10.2071 14.8527 11.2272 15.4088 12.0471 15.856L12.277 15.9827C12.8087 16.2808 13.4787 16.1425 13.849 15.6583L15.0868 14.0671C15.26 13.8464 15.5736 13.7956 15.8077 13.9502L20.0578 16.7848C20.2964 16.9431 20.3679 17.2614 20.2201 17.5067Z" fill="white"/>
 <path d="M11.8994 3.50181C15.1835 3.50546 17.8448 6.16686 17.8485 9.45094C17.8485 9.64422 18.0052 9.80088 18.1984 9.80088C18.3917 9.80088 18.5484 9.64422 18.5484 9.45094C18.5443 5.78046 15.5699 2.80596 11.8994 2.80194C11.7061 2.80194 11.5494 2.9586 11.5494 3.15188C11.5494 3.34515 11.7061 3.50181 11.8994 3.50181Z" fill="white"/>
@@ -327,7 +319,7 @@
 </clipPath>
 </defs>
 </svg>
-              <input class="modal__call" type="submit" value="Позвонить"><svg class="modal__icon2" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <input class="modal__call" type="submit" value="Позвонить"><svg class="modal__icon2" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0)">
 <path d="M20.996 8.02905C20.9938 8.00493 20.989 7.98109 20.9816 7.958C20.9769 7.93737 20.9702 7.91723 20.9617 7.89779C20.9519 7.8788 20.9402 7.86083 20.9267 7.84422C20.9132 7.82449 20.8976 7.80632 20.8802 7.78995C20.8746 7.78507 20.8721 7.77839 20.8662 7.7735L17.5001 5.15924V2.44977C17.5001 1.86987 17.0299 1.39972 16.45 1.39972H12.6569L11.1381 0.220503C10.7629 -0.0721175 10.2368 -0.0721175 9.86159 0.220503L8.3425 1.39972H4.54935C3.96944 1.39972 3.49929 1.86982 3.49929 2.44977V5.15928L0.134241 7.77355C0.128294 7.77847 0.125833 7.78511 0.120254 7.78999C0.102822 7.80632 0.087194 7.82453 0.0736992 7.84426C0.0602454 7.86087 0.0485143 7.8788 0.0387111 7.89783C0.0302204 7.91723 0.0235756 7.93741 0.0187765 7.95804C0.0114754 7.98081 0.00667629 8.00427 0.00442032 8.02806C0.00442032 8.0354 0.000236511 8.04172 0.000236511 8.04906V19.9506C0.000728724 20.1733 0.0727558 20.3899 0.205694 20.5684C0.207786 20.5716 0.208155 20.5754 0.210575 20.5782C0.213036 20.581 0.218287 20.5842 0.221773 20.588C0.418412 20.8468 0.72424 20.9993 1.04922 21.0007H19.9502C20.2764 20.9997 20.5835 20.8464 20.7804 20.5863C20.7832 20.5828 20.7874 20.5817 20.7899 20.5782C20.7923 20.5748 20.7926 20.5716 20.7948 20.5684C20.9277 20.3899 20.9997 20.1733 21.0002 19.9507V8.05005C21.0002 8.0427 20.9964 8.03639 20.996 8.02905ZM10.2896 0.772806C10.4119 0.675676 10.585 0.675676 10.7072 0.772806L11.5147 1.39968H9.48459L10.2896 0.772806ZM1.13741 20.3007L10.2897 13.1915C10.412 13.0945 10.585 13.0945 10.7072 13.1915L19.8619 20.3007H1.13741ZM20.3002 19.755L11.1381 12.6391C10.7628 12.3467 10.2369 12.3467 9.86159 12.6391L0.699178 19.755V8.58311L6.43493 13.0371C6.58776 13.1556 6.8077 13.1278 6.9262 12.975C7.0447 12.8221 7.01689 12.6022 6.86406 12.4837L1.03696 7.95903L3.49933 6.04547V8.75005C3.49933 8.94337 3.65606 9.10006 3.84934 9.10006C4.04265 9.10006 4.19934 8.94333 4.19934 8.75005V2.44973C4.19934 2.25642 4.35603 2.09973 4.54935 2.09973H16.4499C16.6432 2.09973 16.7999 2.25642 16.7999 2.44973V8.75005C16.7999 8.94337 16.9566 9.10006 17.1499 9.10006C17.3433 9.10006 17.4999 8.94333 17.4999 8.75005V6.04547L19.9623 7.95903L14.1251 12.4918C14.0247 12.5679 13.9729 12.6921 13.9895 12.817C14.0062 12.9419 14.0887 13.0482 14.2055 13.0953C14.3224 13.1424 14.4556 13.1232 14.5542 13.0448L20.3001 8.58311V19.755H20.3002Z" fill="white"/>
 <path d="M14.6997 8.39916V6.9991C14.6997 4.67939 12.8192 2.79889 10.4995 2.79889C8.17975 2.79889 6.29926 4.67939 6.29926 6.9991C6.29926 9.31882 8.17975 11.1993 10.4995 11.1993C10.6928 11.1993 10.8495 11.0426 10.8495 10.8493C10.8495 10.656 10.6928 10.4993 10.4995 10.4993C8.56639 10.4993 6.9993 8.93223 6.9993 6.99914C6.9993 5.06606 8.56639 3.49898 10.4995 3.49898C12.4326 3.49898 13.9996 5.06606 13.9996 6.99914V8.3992C13.9996 8.78583 13.6862 9.09925 13.2996 9.09925C12.913 9.09925 12.5995 8.78583 12.5995 8.3992V6.99914C12.5995 6.80583 12.4428 6.64914 12.2495 6.64914C12.0562 6.64914 11.8995 6.80583 11.8995 6.99914C11.8995 7.77237 11.2727 8.3992 10.4995 8.3992C9.72624 8.3992 9.09941 7.77237 9.09941 6.99914C9.09941 6.22592 9.72624 5.59909 10.4995 5.59909C10.6928 5.59909 10.8495 5.4424 10.8495 5.24908C10.8495 5.05577 10.6928 4.89908 10.4995 4.89908C9.55955 4.89699 8.73267 5.51968 8.47508 6.42362C8.21749 7.32757 8.59186 8.2926 9.3917 8.78628C10.1915 9.27997 11.222 9.18211 11.9146 8.54662C11.9908 9.28682 12.6342 9.8372 13.3772 9.79786C14.1203 9.75849 14.702 9.1433 14.6997 8.39916Z" fill="white"/>
@@ -338,11 +330,18 @@
 </clipPath>
 </defs>
 </svg>
-              <input class="modal__write" type="submit" value="Написать">
-            </section>
-          </form>
-        </section>
-      </article>
+                <input class="modal__write" type="submit" value="Написать">
+              </section>
+            </form>
+          </section>
+        </article>
+      </main>
     </div>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-migrate-3.0.1.min.js" integrity="sha256-F0O1TmEa4I8N24nY0bya59eP6svWcshqX1uzwaWC4F4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/fullpage.js"></script>
+    <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
