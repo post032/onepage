@@ -697,7 +697,6 @@ nav ul li:hover > ul {
   position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: #aaa;
 }
 .page-3__content {
   display: -webkit-box;
@@ -980,10 +979,10 @@ nav ul li:hover > ul {
     margin-left: 0;
   }
   .page-3__image-full {
-    position: relative;
     margin-bottom: 30px;
     width: 296px;
     height: 445px;
+    position: relative;
   }
   .page-3__content-info {
     margin-left: 0;
@@ -1047,10 +1046,6 @@ nav ul li:hover > ul {
   .page-3__image-min--size {
     position: relative;
     bottom: 44px;
-  }
-  .sl {
-    width: 296px;
-    height: 445px;
   }
 }
 .attractive__offer {
@@ -1408,6 +1403,11 @@ nav ul li:hover > ul {
   }
 }
 @media (min-width: 1366px) {
+  .pages-lists {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
   .screen {
     width: 61px;
     height: 768px;
@@ -1427,14 +1427,6 @@ nav ul li:hover > ul {
             align-items: center;
     position: fixed;
     z-index: 20;
-    padding: 0;
-    list-style-type: none;
-  }
-  .screen__item {
-    padding: 0;
-    margin: 0;
-    width: 20px;
-    height: 20px;
   }
   .toggle {
     margin: 18px;
@@ -1444,7 +1436,8 @@ nav ul li:hover > ul {
     height: 16px;
     position: relative;
   }
-  .toggle:hover::after .toggle:focus::after {
+  .toggle:hover::after,
+  .toggle:focus::after {
     content: "";
     display: block;
     width: 6px;
@@ -1458,10 +1451,7 @@ nav ul li:hover > ul {
   }
 }
 .popup {
-  position: absolute;
-  z-index: 1000;
-  left: 0;
-  top: 0;
+  position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 320px;
@@ -1471,7 +1461,7 @@ nav ul li:hover > ul {
   background-size: contain;
 }
 .modal {
-  background: url("../img/modal-woman.png") no-repeat right 29px;
+  background: url(../img/modal-woman.png) no-repeat right 29px;
   background-size: contain;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1513,8 +1503,8 @@ nav ul li:hover > ul {
   margin-bottom: 20px;
   position: relative;
 }
-.modal__call,
-.modal__write {
+.modal__write,
+.modal__call {
   background-color: #1DA0FF;
   border: none;
   padding: 10px 40px;
@@ -1563,8 +1553,8 @@ nav ul li:hover > ul {
   .popup {
     width: 520px;
   }
-  .modal__call,
-  .modal__write {
+  .modal__write,
+  .modal__call {
     padding: 10px 60px;
   }
   .modal__icon2 {
@@ -1592,8 +1582,8 @@ nav ul li:hover > ul {
     width: 558px;
     margin-top: 60px;
   }
-  .modal__call,
-  .modal__write {
+  .modal__write,
+  .modal__call {
     width: 315px;
     height: 60px;
     display: -webkit-box;
